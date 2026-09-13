@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shivhem Consultancy — Tax, Audit &amp; Financial Advisory, Ahmedabad</title>
+  <meta name="description" content="Shivhem Consultancy — Income Tax, GST, Bookkeeping, Finance, Insurance, Investment advisory and accounting courses in Ahmedabad, Gujarat." />
+  <meta name="theme-color" content="#0f1c2e" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+</head>
+<body>
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand" aria-label="Shivhem Consultancy home">
+        <span class="brand-seal" aria-hidden="true">
+          <svg viewBox="0 0 48 48" width="44" height="44">
+            <circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+            <circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="0.75" opacity="0.35"/>
+            <text x="24" y="30" text-anchor="middle" font-family="Fraunces, serif" font-size="18" font-weight="600" fill="currentColor">S</text>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Shivhem</span>
+          <span class="brand-sub">CONSULTANCY</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li class="has-dropdown">
+            <a href="#services" aria-haspopup="true">Services</a>
+            <ul class="dropdown">
+              <li><a href="#svc-income-tax">Income Tax</a></li>
+              <li><a href="#svc-gst">GST</a></li>
+              <li><a href="#svc-bookkeeping">Bookkeeping</a></li>
+              <li><a href="#svc-finance">Finance</a></li>
+              <li><a href="#svc-insurance">Insurance</a></li>
+              <li><a href="#svc-investment">Investment</a></li>
+              <li><a href="#svc-calculators">Calculators</a></li>
+            </ul>
+          </li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#heroes">Heroes Around Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false" title="Toggle theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+        </svg>
+      </button> -->
+
+      <a href="#contact" class="btn btn-primary nav-cta">Get in touch</a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">&middot; Ahmedabad, Gujarat  </p>
+          <h1>Every number,<br /><span class="accent-word">accounted for.</span></h1>
+          <p class="lede">
+            Shivhem Consultancy helps individuals and businesses across Gujarat stay
+            compliant, stay informed, and plan ahead — across tax, audit, GST,
+            bookkeeping, insurance and investment.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Book a consultation</a>
+            <a href="#services" class="btn btn-ghost">Explore services</a>
+          </div>
+
+          <div class="stat-strip" role="list">
+            <div class="stat" role="listitem">
+              <span class="stat-num">7</span>
+              <span class="stat-label">Areas of practice</span>
+            </div>
+            <div class="stat" role="listitem">
+              <span class="stat-num">1</span>
+              <span class="stat-label">Ahmedabad office, full attention</span>
+            </div>
+            <div class="stat" role="listitem">
+              <span class="stat-num">2</span>
+              <span class="stat-label">Advisory &amp; learning, under one roof</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-hidden="true">
+          <div class="ledger-card">
+            <div class="ledger-head">
+              <span>Working note</span>
+              <span class="ledger-seal">S</span>
+            </div>
+            <ul class="ledger-lines">
+              <li><span>Income Tax filing</span><span>Reviewed</span></li>
+              <li><span>GST reconciliation</span><span>Matched</span></li>
+              <li><span>Books &amp; MIS</span><span>Ready</span></li>
+              <li><span>Insurance cover</span><span>Assessed</span></li>
+              <li><span>Investment plan</span><span>On track</span></li>
+            </ul>
+            <div class="ledger-foot">
+              <span>One team</span><span>One conversation</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">About Us</span>
+          <!-- <h2>A consultancy built around one conversation, not several handoffs.</h2> -->
+        </div>
+        <div class="about-grid">
+          <div class="about-body">
+            <p>
+              Shivhem Consultancy was set up on a simple idea: that tax, accounting and
+              financial planning work better when one team understands the whole picture
+              — not just the return that's due this month. Based in Ahmedabad, we work with
+              individuals, professionals, and small and mid-sized businesses across Gujarat.
+            </p>
+            <p>
+              Instead of routing you between separate specialists for filing, audit and
+              planning, we keep it under one roof, with one point of contact who already
+              knows your file. It means fewer repeated explanations, and advice that
+              actually accounts for your last decision, not just your next deadline.
+            </p>
+            <p>
+              We also run practical, classroom-style courses for people who want to
+              understand their own numbers — from GST basics to hands-on bookkeeping —
+              because a client who understands the fundamentals makes better decisions with us.
+            </p>
+          </div>
+          <ul class="diff-list">
+            <li>
+              <h3>Senior-led, not junior-run</h3>
+              <p>Your file is reviewed by someone who has seen it before.</p>
+            </li>
+            <li>
+              <h3>One team, seven disciplines</h3>
+              <p>Tax, audit, GST, bookkeeping, finance, insurance and investment, coordinated together.</p>
+            </li>
+            <li>
+              <h3>Rooted in Ahmedabad</h3>
+              <p>Familiar with local business patterns, and reachable when you need to walk in.</p>
+            </li>
+            <li>
+              <h3>Advice, then a paper trail</h3>
+              <p>Every recommendation is backed by a working note you can keep.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Services</span>
+          <h2>Seven disciplines, coordinated by one team.</h2>
+          <p class="section-lede">Expand any area to see what it covers today.</p>
+        </div>
+
+        <div class="accordion" id="services-accordion">
+          <!-- Income Tax -->
+          <div class="acc-item" id="svc-income-tax">
+            <button class="acc-trigger" aria-expanded="false">
+              <span class="acc-index">01</span>
+              <span class="acc-titles">
+                <span class="acc-title">Income Tax</span>
+                <span class="acc-sub">Filing, planning &amp; assessment support</span>
+              </span>
+              <span class="acc-icon" aria-hidden="true"></span>
+            </button>
+            <div class="acc-panel">
+              <p>Return filing for individuals, professionals, partnerships and companies,
+                tax planning through the year rather than only at deadline time, and support
+                if a notice or assessment comes your way.</p>
+              <p class="acc-note">Detailed content for this section to be added shortly.</p>
+            </div>
+          </div>
+          <!-- GST -->
+          <div class="acc-item" id="svc-gst">
+            <button class="acc-trigger" aria-expanded="false">
+              <span class="acc-index">02</span>
+              <span class="acc-titles">
+                <span class="acc-title">GST</span>
+                <span class="acc-sub">Registration, returns &amp; reconciliation</span>
+              </span>
+              <span class="acc-icon" aria-hidden="true"></span>
+            </button>
+            <div class="acc-panel">
+              <p>New GST registration, monthly and quarterly return filing, input credit
+                reconciliation, and advisory on how GST applies to your specific line of business.</p>
+              <p class="acc-note">Detailed content for this section to be added shortly.</p>
+            </div>
+          </div>
+          <!-- Bookkeeping -->
+          <div class="acc-item" id="svc-bookkeeping">
+            <button class="acc-trigger" aria-expanded="false">
+              <span class="acc-index">03</span>
+              <span class="acc-titles">
+                <span class="acc-title">Bookkeeping</span>
+                <span class="acc-sub">Day-to-day accounting &amp; MIS</span>
+              </span>
+              <span class="acc-icon" aria-hidden="true"></span>
+            </button>
+            <div class="acc-panel">
+              <p>Regular bookkeeping, ledger maintenance and trial balance preparation, so
+                your books are ready well before filing season and your MIS reports are ready
+                when you need them.</p>
+              <p class="acc-note">Detailed content for this section to be added shortly.</p>
+            </div>
+          </div>
+          <!-- Finance -->
+          <div class="acc-item" id="svc-finance">
+            <button class="acc-trigger" aria-expanded="false">
+              <span class="acc-index">04</span>
+              <span class="acc-titles">
+                <span class="acc-title">Finance</span>
+                <span class="acc-sub">Statements, projections &amp; loan support</span>
+              </span>
+              <span class="acc-icon" aria-hidden="true"></span>
+            </button>
+            <div class="acc-panel">
+              <p>Preparation of financial statements and projections, working capital
+                assessment, and documentation support when you're approaching a bank or lender.</p>
+              <p class="acc-note">Detailed content for this section to be added shortly.</p>
+            </div>
+          </div>
+          <!-- Insurance -->
+          <div class="acc-item" id="svc-insurance">
+            <button class="acc-trigger" aria-expanded="false">
+              <span class="acc-index">05</span>
+              <span class="acc-titles">
+                <span class="acc-title">Insurance</span>
+                <span class="acc-sub">Understanding &amp; reviewing your cover</span>
+              </span>
+              <span class="acc-icon" aria-hidden="true"></span>
+            </button>
+            <div class="acc-panel">
+              <p>A plain-language review of your existing life, health and business cover,
+                and guidance on where the gaps are, so insurance decisions fit into your
+                broader financial plan.</p>
+              <p class="acc-note">Detailed content for this section to be added shortly.</p>
+            </div>
+          </div>
+          <!-- Investment -->
+          <div class="acc-item" id="svc-investment">
+            <button class="acc-trigger" aria-expanded="false">
+              <span class="acc-index">06</span>
+              <span class="acc-titles">
+                <span class="acc-title">Investment</span>
+                <span class="acc-sub">Goal-based planning &amp; portfolio review</span>
+              </span>
+              <span class="acc-icon" aria-hidden="true"></span>
+            </button>
+            <div class="acc-panel">
+              <p>Goal-based investment planning, mutual fund and SIP guidance, and periodic
+                portfolio reviews, tied back to your tax position rather than looked at in isolation.</p>
+              <p class="acc-note">Detailed content for this section to be added shortly.</p>
+            </div>
+          </div>
+          <!-- Calculators -->
+          <div class="acc-item" id="svc-calculators">
+            <button class="acc-trigger" aria-expanded="false">
+              <span class="acc-index">07</span>
+              <span class="acc-titles">
+                <span class="acc-title">Calculators</span>
+                <span class="acc-sub">Income tax, GST, EMI &amp; SIP tools</span>
+              </span>
+              <span class="acc-icon" aria-hidden="true"></span>
+            </button>
+            <div class="acc-panel">
+              <p>Simple, self-serve calculators for income tax, GST, EMI and SIP planning —
+                quick estimates you can run yourself before your next conversation with us.</p>
+              <a href="#calculators" class="btn btn-ghost btn-sm">Open the calculators</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CALCULATORS (Python-powered) ============ -->
+    <section class="section calculators" id="calculators">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Calculators</span>
+          <h2>Run a quick estimate.</h2>
+          <p class="section-lede">Every figure is calculated on our server and is indicative only — confirm with us before you rely on it.</p>
+        </div>
+
+        <div class="calc-tabs" role="tablist" aria-label="Calculators">
+          <button class="calc-tab is-active" role="tab" data-calc="income-tax">Income Tax</button>
+          <button class="calc-tab" role="tab" data-calc="gst">GST</button>
+          <button class="calc-tab" role="tab" data-calc="emi">EMI</button>
+          <button class="calc-tab" role="tab" data-calc="sip">SIP</button>
+        </div>
+
+        <div class="calc-body">
+          <!-- Income Tax -->
+          <form class="calc-panel is-active" data-panel="income-tax" novalidate>
+            <div class="calc-fields">
+              <label>Annual gross income (₹)
+                <input type="number" name="income" min="0" step="1000" value="1200000" required />
+              </label>
+              <label class="calc-check">
+                <input type="checkbox" name="salaried" checked />
+                <span>Salaried (apply ₹75,000 standard deduction)</span>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm">Calculate tax</button>
+            <div class="calc-result" data-result></div>
+          </form>
+
+          <!-- GST -->
+          <form class="calc-panel" data-panel="gst" novalidate>
+            <div class="calc-fields">
+              <label>Amount (₹)
+                <input type="number" name="amount" min="0" step="100" value="10000" required />
+              </label>
+              <label>GST rate
+                <select name="rate">
+                  <option value="0">0%</option>
+                  <option value="5">5%</option>
+                  <option value="12">12%</option>
+                  <option value="18" selected>18%</option>
+                  <option value="28">28%</option>
+                </select>
+              </label>
+              <label>Mode
+                <select name="mode">
+                  <option value="add" selected>Add GST (exclusive)</option>
+                  <option value="extract">Extract GST (inclusive)</option>
+                </select>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm">Calculate GST</button>
+            <div class="calc-result" data-result></div>
+          </form>
+
+          <!-- EMI -->
+          <form class="calc-panel" data-panel="emi" novalidate>
+            <div class="calc-fields">
+              <label>Loan amount (₹)
+                <input type="number" name="principal" min="0" step="10000" value="2500000" required />
+              </label>
+              <label>Interest rate (% p.a.)
+                <input type="number" name="rate" min="0" step="0.1" value="9" required />
+              </label>
+              <label>Tenure (months)
+                <input type="number" name="months" min="1" step="1" value="240" required />
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm">Calculate EMI</button>
+            <div class="calc-result" data-result></div>
+          </form>
+
+          <!-- SIP -->
+          <form class="calc-panel" data-panel="sip" novalidate>
+            <div class="calc-fields">
+              <label>Monthly investment (₹)
+                <input type="number" name="monthly" min="0" step="500" value="10000" required />
+              </label>
+              <label>Expected return (% p.a.)
+                <input type="number" name="rate" min="0" step="0.5" value="12" required />
+              </label>
+              <label>Duration (years)
+                <input type="number" name="years" min="0" step="1" value="10" required />
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm">Calculate SIP</button>
+            <div class="calc-result" data-result></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COURSES ============ -->
+    <section class="section courses" id="courses">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Courses</span>
+          <h2>Understand your own numbers.</h2>
+          <p class="section-lede">Practical, classroom-style courses for people who want to read their books, not just sign them.</p>
+        </div>
+        <div class="course-grid">
+          <article class="course-card">
+            <div class="course-top"><span class="course-level">Beginner friendly</span><span class="course-dur">6 weeks</span></div>
+            <h3>GST Practitioner Certification</h3>
+            <p class="course-format">Weekday &middot; Online</p>
+            <p>Registration to return filing, reconciliation and notices — built around real GSTN workflows.</p>
+          </article>
+          <article class="course-card">
+            <div class="course-top"><span class="course-level">Intermediate</span><span class="course-dur">4 weeks</span></div>
+            <h3>Practical Income Tax Filing</h3>
+            <p class="course-format">Weekend &middot; Ahmedabad</p>
+            <p>Hands-on filing practice for salaried, professional and business income, plus common notice scenarios.</p>
+          </article>
+          <article class="course-card">
+            <div class="course-top"><span class="course-level">Beginner friendly</span><span class="course-dur">5 weeks</span></div>
+            <h3>Tally &amp; Bookkeeping Fundamentals</h3>
+            <p class="course-format">Evening &middot; Online</p>
+            <p>Day-to-day entries, ledgers and trial balance work using tools you'll actually use on the job.</p>
+          </article>
+          <article class="course-card">
+            <div class="course-top"><span class="course-level">Beginner friendly</span><span class="course-dur">3 weeks</span></div>
+            <h3>Personal Finance &amp; Investing Basics</h3>
+            <p class="course-format">Weekend &middot; Ahmedabad</p>
+            <p>Budgeting, tax-linked savings, and an introduction to mutual funds and SIPs for first-time investors.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HEROES / TESTIMONIALS ============ -->
+    <section class="section heroes" id="heroes">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Heroes Around Us</span>
+          <h2>The people we keep the books for.</h2>
+        </div>
+        <div class="quote-grid">
+          <figure class="quote-card">
+            <blockquote>Filing used to mean three phone calls to three different people. Now it's one conversation, and someone always remembers last year's file.</blockquote>
+            <figcaption>Retail store owner, Maninagar, Ahmedabad</figcaption>
+          </figure>
+          <figure class="quote-card">
+            <blockquote>They explained what my GST notice actually meant before telling me what to do about it. That mattered more than I expected.</blockquote>
+            <figcaption>Small manufacturer, Naroda Industrial Estate</figcaption>
+          </figure>
+          <figure class="quote-card">
+            <blockquote>I took their bookkeeping course mostly out of curiosity. I now read my own trial balance instead of just signing it.</blockquote>
+            <figcaption>Startup co-founder, Ahmedabad</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <span class="section-tag">Get in touch</span>
+          <h2>Start with one conversation.</h2>
+          <p>Tell us where you are today — a return that's due, a notice on your desk, books
+            that need catching up, or a plan you want a second opinion on. We'll take it from there.</p>
+          <ul class="contact-facts">
+            <li><span>Email</span><a href="mailto:inquiry@shivhemconulrancy.com">inquiry@shivhemconulrancy.com</a></li>
+            <li><span>Location</span>Ahmedabad, Gujarat, India</li>
+          </ul>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <label>Name
+            <input type="text" name="name" autocomplete="name" required />
+            <small class="field-error" data-error="name"></small>
+          </label>
+          <label>Email
+            <input type="email" name="email" autocomplete="email" required />
+            <small class="field-error" data-error="email"></small>
+          </label>
+          <label>How can we help?
+            <textarea name="message" rows="4" required></textarea>
+            <small class="field-error" data-error="message"></small>
+          </label>
+          <button type="submit" class="btn btn-primary">Send enquiry</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="brand-name">Shivhem</span>
+        <span class="brand-sub">CONSULTANCY</span>
+        <p class="footer-tag">Every number, accounted for.</p>
+      </div>
+      <nav class="footer-links" aria-label="Quick links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#heroes">Heroes Around Us</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><a href="mailto:inquiry@shivhemconulrancy.com">inquiry@shivhemconulrancy.com</a></p>
+        <p>Ahmedabad, Gujarat, India</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Shivhem Consultancy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
